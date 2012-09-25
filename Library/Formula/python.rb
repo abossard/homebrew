@@ -111,6 +111,7 @@ class Python < Formula
     if build.universal?
       args << "--enable-universalsdk=/" << "--with-universal-archs=intel"
     end
+    args << " --enable-unicode=ucs4 "
 
     # Allow sqlite3 module to load extensions:
     # http://docs.python.org/library/sqlite3.html#f1
